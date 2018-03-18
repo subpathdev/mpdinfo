@@ -1,0 +1,18 @@
+Source: mpdinfo
+Section: sound
+Priority: optional
+Maintainer: Jan Unterbrink <jan.unterbrink@subpath.de>
+Build-Depends: debhelper (>=11), libmpdclient-dev, libmpdclient2
+Standards-Version: 4.1.3
+Homepage: https://github.com/jduepmeier/mpdinfo
+Vcs-Git: https://github.com/jduepmeier/mpdinfo.git
+Vcs-Browser: https://github.com/jduepmeier/mpdinfo/commits/master
+
+Package: mpdinfo
+Architecture: any
+Recommends: sm
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Shows metadata like title, artist on an status display
+ This is tool is a highly configurable, controlled by signals mpd status
+ display tool. It will wait for events from mpd and print it. It will
+ nicely work with screen-massage (sm).
